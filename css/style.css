@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.messages {
+    list-style: none;
+    padding: 0;
+}
+
+.messages li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Utilização de propriedades CSS */
+.border-example {
+    border: 2px solid red;
+}
+
+.letter-spacing-example {
+    letter-spacing: 2px;
+}
+
+.word-spacing-example {
+    word-spacing: 5px;
+}
+
+.margin-example {
+    margin: 20px 0;
+}
+
+.padding-example {
+    padding: 10px 20px;
+}
+
+.position-example {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
