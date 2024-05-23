@@ -2,45 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
-}
-
-.menu {
+header {
     display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.menu a {
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: #f0f0f0;
-}
-
-.messages {
-    list-style: none;
-    padding: 0;
-}
-
-.messages li {
+    align-items: center;
     padding: 10px;
-    margin-bottom: 5px;
+    background-color: #fff;
     border-bottom: 1px solid #ccc;
+}
+
+header img {
+    height: 50px;
 }
 
 .login-form {
@@ -49,6 +32,12 @@ h1 {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color: #fff;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .login-form input[type="text"],
@@ -63,7 +52,7 @@ h1 {
 .login-form input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -71,32 +60,68 @@ h1 {
 }
 
 .login-form input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
-/* Utilização de propriedades CSS */
-.border-example {
-    border: 2px solid red;
+.main-content {
+    display: flex;
 }
 
-.letter-spacing-example {
-    letter-spacing: 2px;
+.sidebar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
 }
 
-.word-spacing-example {
-    word-spacing: 5px;
+.sidebar ul {
+    list-style: none;
+    padding: 0;
 }
 
-.margin-example {
-    margin: 20px 0;
+.sidebar ul li {
+    margin: 10px 0;
 }
 
-.padding-example {
-    padding: 10px 20px;
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.position-example {
-    position: relative;
-    top: 10px;
-    left: 20px;
+.sidebar ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.table-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
